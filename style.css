@@ -1,0 +1,307 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: lightgray;
+}
+
+/* Styling for the body of the webpage */
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for headings */
+h1 {
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  font-size: 32px;
+}
+
+h2 {
+  background-color: #e6e6e6;
+  color: #555;
+  text-align: left;
+  font-size: 28px;
+}
+
+h3 {
+  background-color: #dcdcdc;
+  color: #444;
+  text-align: left;
+  font-size: 24px;
+}
+
+/* Styling for paragraphs */
+p {
+  background-color: #fafafa;
+  color: #666;
+  text-align: justify;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Styling for links */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: green;
+}
+
+/* Styling for lists */
+ul {
+  list-style: square;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+ol {
+  list-style: decimal;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+/* Styling for list items */
+li {
+  color: #555;
+}
+
+/* Styling for buttons */
+button {
+  background-color: #188db4;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+/* Styling for header-container class */
+.header-container {
+  display: flex;
+  flex-direction: row; /* or column, based on your preference */
+  justify-content: center; /* optional: adjust alignment of flex items */
+  align-items: center; /* optional: adjust alignment of flex items */
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center; /* or left/right, based on your preference */
+  margin-top: 80px; /* adjust as needed */
+}
+
+/* Styling for header-img class */
+.header-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styling for header-button class */
+.header-button {
+  background-color: skyblue;
+  border: 2px solid #188db4;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Styling for footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0% 0;
+}
+
+/* Styling for links within the footer */
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Navbar Styling */
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 0%;
+}
+
+.navbar ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.navbar ul li a:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Flexbox Styling */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.flex-item {
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+/* Add style to button */
+#theme-button {
+    background-color: #333; /* Dark gray background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Style button on hover */
+#theme-button:hover {
+    background-color: #555; /* Darker gray background color on hover */
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+    background-color: #222; /* Dark background color */
+    color: #eee; /* Light text color */
+    /* Add more CSS rules for dark mode as needed */
+}
+
+.petition-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.petition-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.signatures {
+    width: 45%;
+    padding-right: 10px;
+}
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+/* Styling for revealable containers */
+.revealable {
+  opacity: 0; /* Initially hide the container */
+  transition: opacity 0.5s ease; /* Add a smooth transition effect */
+}
+
+/* Define the reveal effect when the container is in the viewport */
+.revealable.revealed {
+  opacity: 1;
+}
+/* CSS rule for the revealable class */
+.revealable {
+    position: relative; /* Allow containers to move without affecting other elements */
+    transform: translateY(150px); /* Move the element downwards initially */
+    opacity: 0; /* Make the elements transparent initially */
+    transition: all 2s ease; /* Match the animation duration and timing function */
+}
+
+/* CSS rule for the active class */
+.revealable.active {
+    transform: translateY(0px); /* Move the element to its original position */
+    opacity: 1; /* Make the element fully visible */
+}
+
+/* Optional: Ensure navbar appears in front of other elements */
+.navbar {
+    position: fixed; /* Fix the navbar's position */
+    z-index: 999; /* Set a high z-index to ensure it appears in front */
+}
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjusting image size */
+.modal-content img {
+  max-width: 80%; /* Set maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+

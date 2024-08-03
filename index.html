@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CodeforGeeks</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class = "dark mode">
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <!--- Add to Nav Bar --->
+        <li ><button id="theme-button">Toggle Dark Mode</button></li>
+      </div>
+    </ul>
+    
+
+
+  <section id="home">
+    <!-- Header Section -->
+    <div class="section header-container-revealable">
+      <!-- Left Section -->
+      <div id="header-left" style="width: 200px; height: 200px;">
+        <img id="header-img" src="images/replit.jpg" alt="Header Image" style="max-width: 100%; max-height: 100%;">
+      </div>
+
+      <!-- Right Section -->
+      <div id="header-right">
+        <h1>CFG</h1>
+        <button class="header-button">Youtube</button>
+        <button class="header-button">Stack OverFlow</button>
+      </div>
+    </div>
+
+ <section id="about" class="section revealable">
+   <h1>My Activism Project: CodeforGeeks</h1>
+   <h3>My description of this website is to bring everyone who is in college to code and learn how to code and have resources to help</h3>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/HluANRwPyNo?si=QMrG11dvbcaVCr_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   <button type="button" style="background-color: red;">BIG RED BUTTON</button>
+   <button type="button" style="background-color: blue;">AI button</button>
+
+   <ul>
+     <li>15%-25% have a hard time finding resources</li>
+     <li>25%-35% have a hard time networking students </li>
+     <li>35%-45% Go to extra help</li>
+     <li>>45% use ChatGPT</li>
+   </ul>
+
+  <!--- Impact --->
+  <section id="impact"class="section revealable">
+    <h2>Impacts of CodeforGeeks!</h2>
+    <img src="images/4416626.jpg" style="width: 200px; height: 200px;" />
+
+
+    <h3>Where can this problem have lasting effects? </h3>
+    <p>It will have long-lasting effects on students who want to learn and have a trusting resource to help them learn.
+    </p>
+
+    <img src="images/3124966.jpg" style="width: 200px; height: 200px;" />
+    <h3>Where else can this problem have lasting effects?</h3>
+    <p>At the workplace when you are collaborating or working as a team everyone can use it to be more efficient
+    </p
+      <div class="section petition revealable" id="petition">
+
+          <h2>Sign Our Petition 📢</h2>
+          <div class="petition-container">
+
+
+            <div class="petition-para">
+              <p>Welcome to our online hub, where high school students meet the world of computer science! Whether you're a coding enthusiast or just dipping your toes into the vast ocean of technology, our website is your go-to resource for all things computing. Just like GeeksforGeeks, we provide a wealth of information, tutorials, and resources to help you navigate the exciting world of programming, algorithms, and everything in between. From beginner-friendly guides to advanced coding challenges, we've got you covered on your journey to becoming a proficient computer scientist. So dive in, explore, and let your curiosity drive your learning experience as you unlock the endless possibilities of the digital realm!</p>
+            </div>
+
+            <div class="signatures">
+              <p>🖊️ Computer Science student from FSC supports this.</p>
+              <p>🖊️ Software Engineer supports this.</p>
+              <p>🖊️ High School student supports this.</p>
+            </div>
+            
+
+          </div>
+
+     <!-- Sign Petition Form -->
+        <form id="sign-petition" title="sign-petition">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="hometown">Hometown:</label>
+            <input type="text" id="hometown" name="hometown" required><br>
+          
+          <label for="Email">Email:</label>
+          <input type="text" id="Email" name="Email" required><br>
+
+
+            <!-- You can add more inputs here if needed -->
+
+            <!-- Sign Now Button -->
+            <button type="submit" id="sign-now-button">Sign Now</button>
+        </form>
+        <div class="signatures">
+          <!-- signatures go here -->
+        </div>
+
+    </div>
+
+  
+  <!--- News ---> <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
+ <section id="news" class="section revealable">
+   <h2>Recent News</h2>
+   
+   <article>
+     <h3>Why Kids Should Learn to Code</h3>
+     <p>This article discusses the importance of teaching kids how to code from an early age and the benefits it provides for their future.</p>
+     <a href="https://techbootcamps.utexas.edu/blog/why-kids-should-learn-to-code/">Read more</a>
+   </article>
+   <article>
+      <h3>First Software Engineer AI?</h3>
+      <p>This article discusses how AI will be rising in the future.</p>
+      <a href="https://www.cognition-labs.com/introducing-devin">Read more</a>
+    </article>
+
+   <!-- Footer Section -->
+   <div class="footer">
+      <a href=#about>Youtube Video</a>
+     <a href="https://www.w3schools.com/">w3schools</a>
+   </div>
+<section id="contact" class="section revealable">
+  <h2>Contact Us</h2>
+  <p>Christopher Maradiaga</p>
+  <p>Email: maradiagachris03@gmail.com</p>
+  <!--- Add above the closing body tag </body> --->
+  <script src="index.js"></script>
+  
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div id="modal-text-container">
+      <p id="thanks-modal-content">Thank you for your support!</p>
+      <!-- Placeholder text here -->
+    </div>
+    <img id="Thank-you-image" class="small-image" src="images/pexels-rovenimages-com-344613-949592.jpg" alt="Thank You Image">
+  </div>
+
+
+</body>
+
+</html>
